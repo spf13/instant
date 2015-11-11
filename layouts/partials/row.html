@@ -1,0 +1,9 @@
+<section id="{{ $.Scratch.Get "id" }}"></section>
+<div class="container">
+  <div class="row centered mt mb">
+    <h1>{{ $.Scratch.Get "title" }}</h1>{{ $sectionName :=  $.Scratch.Get "name"}}
+    {{ range where .Data.Pages "Section" $sectionName }}
+        {{ .Render "gallery"}}
+    {{ end }}
+  </div><!--/row -->
+</div><!--/container -->

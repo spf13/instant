@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+
+	<div id="headerwrap">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3">
+					<h4>{{ .Site.Params.introLine  | safeHTML }}</h4>
+					<h1>{{ .Site.Params.yourName | safeHTML }}</h1>
+					<h4>{{ .Site.Params.tagLine | safeHTML }}</h4>
+				</div>
+			</div><!--/row -->
+	    </div> <!-- /container -->
+	</div><!--/headerwrap -->
+
+  {{ partial "sections" . }}
+
+{{ partial "social" . }}
+
+{{ partial "bottom" . }}
+{{ partial "footer" . }}

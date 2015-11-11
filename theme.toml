@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "Instant"
+license = "MIT"
+licenselink = "https://github.com/spf13/instant/blob/master/LICENSE.md"
+description = ""
+homepage = "http://blacktie.co/2014/05/instant-personal-portfolio-theme/"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.14
+
+[author]
+  name = "Steve Francia"
+  homepage = "http://spf13.com"
+
+# If porting an existing theme
+[original]
+  name = "Black Tie"
+  homepage = "http://blacktie.co/2014/05/instant-personal-portfolio-theme/"
+  repo = ""
