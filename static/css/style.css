@@ -69,6 +69,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
     color: #4a4a4a;
+    padding-bottom: 0.8em;
 }
 
 
@@ -119,19 +120,27 @@ h1, h2, h3, h4, h5, h6 {
     -o-background-size: cover;
     background-size: cover;
 }
+#headerwrap h1,
+#headerwrap h2,
+#headerwrap h3,
+#headerwrap h4 {
+	color:#ffffff;
+}
 
 #headerwrap h1 {
-	color:#ffffff;
 	padding-top: 10px;
 	padding-bottom: 20px;
 	letter-spacing: 4px;
 	font-size: 80px;
-	font-weight: bold;
+	font-weight: 700;
+}
+
+#headerwrap h2 {
+	font-weight: 500;
 }
 
 #headerwrap h4 {
 	font-weight: 400;
-	color: #ffffff
 }
 
 #social {
@@ -232,9 +241,13 @@ a, a:hover {
   text-shadow: 1px 1px 10px rgba(150, 150, 150, .8) !important;
 }
 
-#headerwrap h1, #headerwrap h2, #headerwrap h3, #headerwrap h4 {
-  text-shadow: 1px 1px 10px rgba(10, 10, 10, .8) !important;
+#headerwrap h1, #headerwrap h2 {
+  text-shadow: 1px 1px 5px rgba(10, 10, 10, .8) !important;
 }
+#headerwrap h3, #headerwrap h4 {
+  text-shadow: 1px 1px 3px rgba(10, 10, 10, .8) !important;
+}
+
 
 
 /*Change icons size here*/
