@@ -1,11 +1,14 @@
 /*
- * Author: Carlos
+ * Original Author: Carlos
  * URL: http://Alvarez.is
  *
  * Project Name: NYC Design
  * Version: 1.0
  * Date: 04-20-2014
  * URL:
+ *
+ * Modifications by: Steve Francia
+ * URL: http://spf13.com
  */
 
 
@@ -77,8 +80,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
-.navbar-default .navbar-brand {
-	color: #f24bbe;
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+    color: #3ABEFF;
 }
 
 .navbar-default {
@@ -87,21 +91,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #f24bbe;
+	color: #6DC9E8;
 	background-color: transparent;
 	border-bottom: 2px solid #1abc9c
 }
 
-.navbar-default .navbar-nav > li > a {
-	color: #f24bbe;
-}
 
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
 
-#headerwrap {
-	background: url(../img/back.jpg) no-repeat center top;
+#wrap {
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
@@ -120,14 +120,21 @@ h1, h2, h3, h4, h5, h6 {
     -o-background-size: cover;
     background-size: cover;
 }
-#headerwrap h1,
-#headerwrap h2,
-#headerwrap h3,
-#headerwrap h4 {
+
+
+.back {
+	background: url(../img/back.jpg) no-repeat center top;
+}
+
+#wrap h1,
+#wrap h2,
+#wrap h3,
+#wrap h4 {
 	color:#ffffff;
 }
 
-#headerwrap h1 {
+
+#wrap h1 {
 	padding-top: 10px;
 	padding-bottom: 20px;
 	letter-spacing: 4px;
@@ -135,11 +142,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
-#headerwrap h2 {
+#wrap h2 {
 	font-weight: 500;
 }
 
-#headerwrap h4 {
+#wrap h4 {
 	font-weight: 400;
 }
 
@@ -169,63 +176,9 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: 10px;
 }
 
-#workwrap {
+.work {
 	background: url(../img/work.jpg) no-repeat center top;
-	margin-top: -70px;
-	padding-top: 250px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 650px;
-	width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
-
-#workwrap h1 {
-	color:#ffffff;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	letter-spacing: 4px;
-	font-size: 80px;
-	font-weight: bold;
-}
-
-#workwrap h4 {
-	font-weight: 400;
-	color: #ffffff
-}
-
-#aboutwrap {
-	background: url(../img/about.jpg) no-repeat center top;
-	margin-top: -70px;
-	padding-top: 250px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 550px;
-	width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-
 
 
 /* Gallery */
@@ -237,15 +190,11 @@ h1, h2, h3, h4, h5, h6 {
 	opacity: 0.4;
 }
 
-a, a:hover {
-  text-shadow: 1px 1px 10px rgba(150, 150, 150, .8) !important;
+#wrap h1, #wrap h2 {
+  text-shadow: 1px 1px 3px rgba(10, 10, 10, .5) !important;
 }
-
-#headerwrap h1, #headerwrap h2 {
-  text-shadow: 1px 1px 5px rgba(10, 10, 10, .8) !important;
-}
-#headerwrap h3, #headerwrap h4 {
-  text-shadow: 1px 1px 3px rgba(10, 10, 10, .8) !important;
+#wrap h3, #wrap h4 {
+  text-shadow: 1px 1px 2px rgba(10, 10, 10, .5) !important;
 }
 
 
